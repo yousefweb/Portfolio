@@ -1827,19 +1827,18 @@ margin-top: 1.25rem;
   height: 40px;
   margin: 0 4px;
   }
-  .home {
-  overflow-x: hidden;
-  line-height: 2rem;
-  padding: 100px 50px;
-  justify-content: space-between;
-  width: 100%; 
-  height: calc(100vw / 10);
-  max-height: 180vh;
-  background-image: url('../img/BG.png');
-  background-size: cover;
-  background-position: center top 10px;
+ .home {
+    overflow-x: hidden;
+    line-height: 2rem;
+    padding: 50px; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+    width: 100%; /* Full width */
+    height: calc(100vw / 4); /* Set height relative to viewport width */
+    max-height: 180vh; /* Limit maximum height to maintain aspect ratio */
+    background-image: url('../img/BG.png');
+    background-size: cover;
+    background-position: center top 10px;
   }
-  
   .menu-icon {
   display: block;
   margin-left: 100px;
