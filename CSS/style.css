@@ -1834,8 +1834,8 @@ margin-top: 1.25rem;
     padding: 50px; /* Adjust padding for smaller screens */
     justify-content: space-between;
     width: 1000%; /* Set width to 1000% of viewport width */
-    height: calc(100vw / 4); /* Set height relative to viewport width */
-    max-height: 180vh; /* Limit maximum height to maintain aspect ratio */
+    height: 180vh
+    max-height: 180vh; 
     background-image: url('../img/BG.png');
     background-size: cover;
     background-position: center top 10px;
