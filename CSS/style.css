@@ -2628,3 +2628,41 @@ margin-top: 1.25rem;
     margin-top: 10px;
   }
 }
+@media (min-width: 2340px) {
+  /* Education Section */
+  .education-item {
+    width: 30%;
+    margin: 10px;
+  }
+
+  /* Background images in sections */
+  .home {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .experience {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .services-svs {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .projects {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contact {
+    background-size: cover;
+    background-position: center;
+  }
+}
