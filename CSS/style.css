@@ -1801,7 +1801,7 @@ margin-top: 1.25rem;
 }
 /* Media Query */
 
-@media screen and (min-width: 352px) and (max-width:844px) {
+@media screen and (min-width: 320px) and (max-width:844px) {
 
   body {
   background: var(--bg-color);
@@ -1941,7 +1941,7 @@ margin-top: 1.25rem;
   }
   
   /* about media */
-  @media screen and (min-width: 352px) and (max-width: 844px) {
+  @media screen and (min-width: 320px) and (max-width: 844px) {
   .about-text {
   margin-left: 100px;
   width: 200%;
@@ -1992,7 +1992,7 @@ margin-top: 1.25rem;
   }
   
   /* education media */
-  @media screen and (min-width: 352px) and (max-width: 844px) {
+  @media screen and (min-width: 320px) and (max-width: 844px) {
   .education {
   display: flex;
   flex-direction: row;
@@ -2038,7 +2038,7 @@ margin-top: 1.25rem;
   }
   
   /* experience media */
-  @media screen and (min-width: 352px) and (max-width: 844px) {
+  @media screen and (min-width: 320px) and (max-width: 844px) {
   .experience{
   margin-left: 200px;
   width: 100%;
@@ -2102,7 +2102,7 @@ margin-top: 1.25rem;
   }
   
   /* services media */
-  @media screen and (min-width: 352px) and (max-width: 844px) {
+  @media screen and (min-width: 320px) and (max-width: 844px) {
   
   .services-svs{
   width: 355%;
@@ -2141,7 +2141,7 @@ margin-top: 1.25rem;
   }
   
   /* project media */
-  @media screen and (min-width: 352px) and (max-width: 844px) {
+  @media screen and (min-width: 320px) and (max-width: 844px) {
   .projects {
   width: 340%;
   size: 200%;
@@ -2209,7 +2209,7 @@ margin-top: 1.25rem;
   }
   
   /* contact media */
-  @media screen and (min-width: 352px) and (max-width:844px){
+  @media screen and (min-width: 320px) and (max-width:844px){
   .contact {
   flex-direction: column;
   align-items: center;
@@ -2279,7 +2279,7 @@ margin-top: 1.25rem;
   }
   
   /* footer media */
-  @media screen and (min-width:352px)and (max-width: 844px) {
+  @media screen and (min-width:320px)and (max-width: 844px) {
   .footer{
   width: 400%;
   margin-top: 150px;
