@@ -1802,39 +1802,41 @@ margin-top: 1.25rem;
 /* Media Query */
 @media screen and (min-width: 320px) and (max-width:844px) {
 
-  body {
-    background: var(--bg-color);
-    color: var(--text-color);
-    transition: all 0.45s ease;
-  }
+body {
+background: var(--bg-color);
+color: var(--text-color);
+transition: all 0.45s ease;
+}
+/* header {
+justify-content: space-around;
+} */
 
-  .logo {
-    font-size: 4rem;
-    padding-left: 500px; /* Check if this padding is intended */
-  }
+.logo {
+font-size: 4rem;
+padding-left: 500px;
+}
 
-  .logo .logo-image::before {
-    content: '';
-    color: var(--main-color);
-    background: url('../img/logo.png') no-repeat;
-    background-size: contain;
-    display: inline-block; /* Changed from inline */
-    width: 40px;
-    height: 40px;
-    margin: 0 4px;
-  }
-
-  .home {
-    line-height: 2rem;
-    padding: 100px 50px;
-    justify-content: space-between;
-    width: 900%;
-    height: 180vh; /* Keep this for full viewport height */
-    background-image: url('../img/BG.png');
-    background-size: cover;
-    background-position: center top 10px;
-  }
-
+.logo .logo-image::before {
+content: '';
+color: var(--main-color);
+background: url('../img/logo.png') no-repeat;
+background-size: contain;
+display: inline;
+width: 40px;
+height: 40px;
+margin: 0 4px;
+}
+.home {
+overflow-x: hidden;
+line-height: 2rem;
+padding: 100px 50px;
+justify-content: space-between;
+width: 1000%;
+height: 180vh;
+background-image: url('../img/BG.png');
+background-size: cover;
+background-position: center top 10px;
+}
   .menu-icon {
     display: block;
     margin-left: 100px;
