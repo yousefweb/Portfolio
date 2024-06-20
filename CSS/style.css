@@ -1833,8 +1833,7 @@ margin-top: 1.25rem;
     line-height: 2rem;
     padding: 50px; /* Adjust padding for smaller screens */
     justify-content: space-between;
-    width: 140vw; /* Set width based on viewport width */
-    max-width: 200%; /* Limit maximum width to 200% of viewport width */
+    width: 1000%; /* Set width to 1000% of viewport width */
     height: calc(100vw / 4); /* Set height relative to viewport width */
     max-height: 180vh; /* Limit maximum height to maintain aspect ratio */
     background-image: url('../img/BG.png');
