@@ -2407,3 +2407,224 @@ margin-top: 1.25rem;
       font-size: 0.6875rem;
   }
 }
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    padding: 10px 20px;
+    margin: 20px 0;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .navlist {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .navlist li {
+    margin: 10px 0;
+  }
+
+  /* Home Section */
+  .home {
+    padding: 100px 10%;
+  }
+
+  .home-text h1 {
+    font-size: 3rem;
+  }
+
+  .home-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  /* About Section */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .about-img img {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .about-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Education Section */
+  .education {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .main-text h2 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .education-item {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  /* Experience Section */
+  .experience {
+    padding: 30px 10%;
+  }
+
+  .experience-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .experience-item h3 {
+    font-size: 2rem;
+  }
+
+  .experience-item h5 {
+    font-size: 1rem;
+  }
+
+  .experience-item p,
+  .experience-item ul {
+    font-size: 0.9rem;
+  }
+
+  /* Services Section */
+  .services-content-svs {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .box-svs {
+    padding: 20px;
+  }
+
+  .box-svs h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .box-svs p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding-left: 20px;
+    padding-right: 20px;
+    top: -30px;
+  }
+
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-left: 0;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .row img {
+    border-radius: 10px;
+  }
+
+  .proj {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .proj h5 {
+    font-size: 1.2rem;
+  }
+
+  .proj p {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 10%;
+    padding: 30px;
+  }
+
+  .contact-text h4 {
+    font-size: 1.2rem;
+    margin: 8px;
+  }
+
+  .contact-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-text p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-icon i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  /* Footer Section */
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-links li {
+    margin: 10px 0;
+  }
+
+  .footer-logo img {
+    max-width: 80px;
+  }
+
+  .footer-text p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}
