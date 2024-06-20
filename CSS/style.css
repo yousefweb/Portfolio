@@ -1828,18 +1828,17 @@ margin-top: 1.25rem;
   margin: 0 4px;
   }
 
-  .home {
-    overflow-x: hidden;
-    line-height: 2rem;
-    padding: 50px; /* Adjust padding for smaller screens */
-    justify-content: space-between;
-    width: 1000%; /* Set width to 1000% of viewport width */
-    height: 180vh
-    max-height: 180vh; 
-    background-image: url('../img/BG.png');
-    background-size: cover;
-    background-position: center top 10px;
-  }
+.home {
+overflow-x: hidden;
+line-height: 2rem;
+padding: 100px 50px;
+justify-content: space-between;
+width: 1000%;
+height: 180vh;
+background-image: url('../img/BG.png');
+background-size: cover;
+background-position: center top 10px;
+}
   .menu-icon {
   display: block;
   margin-left: 100px;
