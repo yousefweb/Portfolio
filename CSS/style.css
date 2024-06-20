@@ -2667,9 +2667,20 @@ margin-top: 1.25rem;
   }
 }
 @media (min-width: 350px) {
-  /* Home Section */
   .home {
+    width: calc(100% + 350px);
+    margin-left: -175px; /* Half of the added width to center the content */
     padding-left: calc(15% + 350px);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home-text {
+    max-width: 60%;
+  }
+
+  .slide {
+    margin-bottom: 30px;
   }
 
   /* Experience Section */
