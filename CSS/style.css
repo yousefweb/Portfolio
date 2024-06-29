@@ -829,10 +829,11 @@ section {
     background: var(--bg-color);
     color: var(--text-color);
     transition: all 0.45s ease;
+    transform-origin: top left; 
+    font-size: 16px; 
+    width: 125%;
+    height: 80vh;
   }
-  /* header {
-    justify-content: space-around;
-  } */
 
   .logo {
     font-size: 4rem;
@@ -1649,7 +1650,7 @@ padding: 4rem;
 }
 
 .contact-text {
-margin-top: -7.5rem;
+margin-top: -0.5rem;
 text-align: left;
 max-width: 500px;
 }
@@ -1800,16 +1801,18 @@ margin-top: 1.25rem;
 
 }
 /* Media Query */
-@media screen and (min-width: 320px) and (max-width:844px) {
+@media screen and (min-width: 360px) and (max-width: 740px) {
 
 body {
 background: var(--bg-color);
 color: var(--text-color);
 transition: all 0.45s ease;
+transform: scale(0.3); 
+transform-origin: top left; 
+font-size: 16px; 
+width: 125%;
+height: 80vh;
 }
-/* header {
-justify-content: space-around;
-} */
 
 .logo {
 font-size: 4rem;
@@ -1936,7 +1939,7 @@ background-position: center top 10px;
 
   
   /* about media */
-  @media screen and (min-width: 320px) and (max-width: 844px) {
+  @media screen and (min-width: 360px) and (max-width: 740px) {
   .about-text {
   margin-left: 100px;
   width: 200%;
@@ -1987,8 +1990,8 @@ background-position: center top 10px;
   }
   
   /* education media */
-  @media screen and (min-width: 320px) and (max-width: 844px) {
-  .education {
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .education {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -2033,8 +2036,8 @@ background-position: center top 10px;
   }
   
   /* experience media */
-  @media screen and (min-width: 320px) and (max-width: 844px) {
-  .experience{
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .experience{
   margin-left: 200px;
   width: 100%;
   }
@@ -2097,9 +2100,8 @@ background-position: center top 10px;
   }
   
   /* services media */
-  @media screen and (min-width: 320px) and (max-width: 844px) {
-  
-  .services-svs{
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .services-svs{
   width: 355%;
   margin-left: 35px
   }
@@ -2136,8 +2138,8 @@ background-position: center top 10px;
   }
   
   /* project media */
-  @media screen and (min-width: 320px) and (max-width: 844px) {
-  .projects {
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .projects {
   width: 340%;
   size: 200%;
   height: auto;
@@ -2204,8 +2206,8 @@ background-position: center top 10px;
   }
   
   /* contact media */
-  @media screen and (min-width: 320px) and (max-width:844px){
-  .contact {
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .contact {
   flex-direction: column;
   align-items: center;
   width: 390%;
@@ -2274,8 +2276,8 @@ background-position: center top 10px;
   }
   
   /* footer media */
-  @media screen and (min-width:320px)and (max-width: 844px) {
-  .footer{
+  @media screen and (min-width: 360px) and (max-width: 740px) {
+    .footer{
   width: 400%;
   margin-top: 150px;
   }
