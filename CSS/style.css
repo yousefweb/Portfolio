@@ -832,7 +832,7 @@ section {
     transform-origin: top left; 
     font-size: 16px; 
     width: 125%;
-    height: 80vh;
+    height: 40vh;
   }
 
   .logo {
@@ -855,8 +855,8 @@ section {
     line-height: 2rem;
     padding: 100px 50px;
     justify-content: space-between;
-    width: 356%;
-    height: 133vh;
+    width: 706%;
+    height: 162vh;
     background-image: url('../img/BG.png'); 
     background-size: cover;
     background-position: center top 10px;
@@ -1650,6 +1650,7 @@ padding: 4rem;
 }
 
 .contact-text {
+  display: contents;
 margin-top: -0.5rem;
 text-align: left;
 max-width: 500px;
@@ -1807,11 +1808,12 @@ body {
 background: var(--bg-color);
 color: var(--text-color);
 transition: all 0.45s ease;
-transform: scale(0.3); 
+transform: scale(0.5);
+zoom: 0.8; 
 transform-origin: top left; 
 font-size: 16px; 
 width: 125%;
-height: 80vh;
+height: 40vh;
 }
 
 .logo {
@@ -1834,8 +1836,8 @@ overflow-x: hidden;
 line-height: 2rem;
 padding: 100px 50px;
 justify-content: space-between;
-width: 1100%;
-height: 230vh;
+width: 765%;
+height: 199vh;
 background-image: url('../img/BG.png');
 background-size: cover;
 background-position: center top 10px;
