@@ -1360,7 +1360,7 @@ section {
 @media screen and (max-width: 844px) {
   .logo {
     font-size: 3rem;
-    margin-left: 20px;
+    margin-left: 100px;
   }
 
   .menu-icon {
