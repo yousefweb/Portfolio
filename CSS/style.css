@@ -1360,7 +1360,7 @@ section {
 @media screen and (max-width: 844px) {
   .logo {
     font-size: 3rem;
-    margin-left: 100px;
+    margin-left: 20px;
   }
 
   .menu-icon {
@@ -1807,8 +1807,8 @@ body {
 background: var(--bg-color);
 color: var(--text-color);
 transition: all 0.45s ease;
-transform: scale(0.3);
-zoom: 0.9; 
+transform: scale(0.5);
+zoom: 0.7; 
 transform-origin: top left; 
 font-size: 16px; 
 width: 125%;
@@ -1835,7 +1835,7 @@ overflow-x: hidden;
 line-height: 3rem;
 padding: 192px 50px;
 justify-content: space-between;
-width: 765%;
+width: 700%;
 height: 199vh;
 background-image: url('../img/BG.png');
 background-size: cover;
@@ -1914,7 +1914,7 @@ background-position: center top 10px;
     font-weight: 500; /* Corrected typo from 500px to 500 */
     background: var(--main-color);
     color: var(--text-color);
-    margin-bottom: 95px;
+    margin-bottom: 10px;
   }
 
   .two {
@@ -1986,7 +1986,7 @@ background-position: center top 10px;
   font-size: 90px;
   padding: 12px;
   margin-bottom: 100px;
-  margin-left: 45px;
+  margin-left: 120px;
   }
   }
   
@@ -2044,7 +2044,7 @@ background-position: center top 10px;
   }
   .experience h2 {
   display: inline-block;
-  margin-left: 37px;
+  margin-left: 220px;
   font-size: 9rem;
   
   }
