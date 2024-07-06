@@ -837,7 +837,7 @@ section {
     }
   .logo {
     font-size: 4rem;
-    padding-left: 500px;
+    padding-left: 575px;
     }
 
   .logo .logo-image::before {
@@ -855,7 +855,7 @@ section {
     line-height: 2rem;
     padding: 100px 50px;
     justify-content: space-between;
-    width: 780%;
+    width: 875%;
     height: 199vh;
     background-image: url('../img/BG.png'); 
     background-size: cover;
@@ -1835,7 +1835,7 @@ overflow-x: hidden;
 line-height: 3rem;
 padding: 192px 50px;
 justify-content: space-between;
-width: 858%;
+width: 875%;
 height: 199vh;
 background-image: url('../img/BG.png');
 background-size: cover;
