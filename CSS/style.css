@@ -1817,7 +1817,7 @@ height: 40vh;
 
 .logo {
 font-size: 4rem;
-padding-left: 480px;
+padding-left: 575px;
 }
 
 .logo .logo-image::before {
@@ -1835,7 +1835,7 @@ overflow-x: hidden;
 line-height: 3rem;
 padding: 192px 50px;
 justify-content: space-between;
-width: 780%;
+width: 858%;
 height: 199vh;
 background-image: url('../img/BG.png');
 background-size: cover;
