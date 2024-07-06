@@ -828,6 +828,7 @@ section {
     background: var(--bg-color);
     color: var(--text-color);
     transition: all 0.45s ease;
+    transform: scale(25%);
     zoom: 100%; 
     transform-origin: top left; 
     font-size: 16px; 
@@ -854,8 +855,8 @@ section {
     line-height: 2rem;
     padding: 100px 50px;
     justify-content: space-between;
-    width: 730%;
-    height: 162vh;
+    width: 780%;
+    height: 199vh;
     background-image: url('../img/BG.png'); 
     background-size: cover;
     background-position: center top 10px;
@@ -1806,7 +1807,8 @@ body {
 background: var(--bg-color);
 color: var(--text-color);
 transition: all 0.45s ease;
-zoom: 100%; 
+transform: scale(25%);
+zoom: 100%;
 transform-origin: top left; 
 font-size: 16px; 
 width: 125%;
@@ -1833,7 +1835,7 @@ overflow-x: hidden;
 line-height: 3rem;
 padding: 192px 50px;
 justify-content: space-between;
-width: 750%;
+width: 780%;
 height: 199vh;
 background-image: url('../img/BG.png');
 background-size: cover;
