@@ -2034,10 +2034,11 @@ background-position: center top 10px;
   }
   
   .education-image img {
-  margin-right: 0;
-  max-width: 200%;
-  width:152%;
+margin-right: 650px;
+max-width: 100%;
+width: 100%;
   }
+  
   
   .education-details h3 {
   font-size: 49px;
