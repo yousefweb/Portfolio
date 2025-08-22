@@ -275,11 +275,29 @@ section {
 /* Eductaion Section */
 .education {
   display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 10px;
   background-color: var(--bg-color);
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  justify-content: space-around;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.education:active {
+  cursor: grabbing;
+}
+
+.education::-webkit-scrollbar {
+  display: none;
+}
+
+.education-item {
+  flex: 0 0 auto;
+  width: 250px;
 }
 
 .main-text h2 {
@@ -837,7 +855,7 @@ section {
     }
   .logo {
     font-size: 4rem;
-    padding-left: 575px;
+    padding-left: 500px;
     }
 
   .logo .logo-image::before {
