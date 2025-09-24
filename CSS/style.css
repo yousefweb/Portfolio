@@ -1041,9 +1041,9 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
-    max-width: 100%;
-    width: 100%;
-    margin: 50px auto;
+    max-width: 200%;
+    width: 200%;
+    margin: 185px 200px;
   }
 
   .main-text h2 {
@@ -2353,17 +2353,4 @@ width: 100%;
   margin-top: 20px;
   }
   }
-@media (max-width: 600px) {
-  #education {
-    padding: 30px 10px;
-  }
-
-  #education .edu-item {
-    margin-bottom: 20px;
-  }
-
-  #education img {
-    width: 100%;
-    height: auto;
-  }
-}
+  
