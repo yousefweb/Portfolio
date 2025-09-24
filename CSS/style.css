@@ -2353,4 +2353,17 @@ width: 100%;
   margin-top: 20px;
   }
   }
-  
+@media (max-width: 600px) {
+  #education {
+    padding: 30px 10px;
+  }
+
+  #education .edu-item {
+    margin-bottom: 20px;
+  }
+
+  #education img {
+    width: 100%;
+    height: auto;
+  }
+}
