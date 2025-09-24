@@ -1,43 +1,23 @@
-const slider = document.querySelector('.education');
-let isDown = false;
-let startX = 0;
-let scrollStart = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const eduItems = document.querySelectorAll("#education .edu-item");
 
-function getPageX(e) {
-  // Support both mouse and touch
-  return e.pageX || (e.touches && e.touches[0].pageX);
-}
-
-// Mouse Events
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  startX = getPageX(e);
-  scrollStart = slider.scrollLeft;
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        eduItems.forEach(item => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            item.style.opacity = 1;
+            item.style.transform = "translateY(0)";
+          } else {
+            item.style.opacity = 0;
+            item.style.transform = "translateY(50px)";
+          }
+        });
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
 });
-
-['mouseup', 'mouseleave'].forEach(event => {
-  slider.addEventListener(event, () => isDown = false);
-});
-
-slider.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const move = getPageX(e) - startX;
-  slider.scrollLeft = scrollStart - move;
-});
-
-slider.addEventListener('touchstart', (e) => {
-  isDown = true;
-  startX = getPageX(e);
-  scrollStart = slider.scrollLeft;
-}, { passive: true });
-
-slider.addEventListener('touchend', () => {
-  isDown = false;
-});
-
-slider.addEventListener('touchmove', (e) => {
-  if (!isDown) return;
-  const move = getPageX(e) - startX;
-  slider.scrollLeft = scrollStart - move;
-}, { passive: false });
