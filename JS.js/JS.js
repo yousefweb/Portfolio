@@ -1,23 +1,52 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const eduItems = document.querySelectorAll("#education .edu-item");
+const slider = document.querySelector('.education');
+let isDown = false;
+let startX = 0;
+let scrollStart = 0;
 
-  let ticking = false;
-  window.addEventListener("scroll", () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        eduItems.forEach(item => {
-          const rect = item.getBoundingClientRect();
-          if (rect.top < window.innerHeight - 100) {
-            item.style.opacity = 1;
-            item.style.transform = "translateY(0)";
-          } else {
-            item.style.opacity = 0;
-            item.style.transform = "translateY(50px)";
-          }
-        });
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
+// ---- Mouse Events ----
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active'); // optional for styling
+  startX = e.pageX;
+  scrollStart = slider.scrollLeft;
+  slider.style.cursor = 'grabbing';
 });
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+  slider.style.cursor = 'grab';
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+  slider.style.cursor = 'grab';
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const move = e.pageX - startX;
+  slider.scrollLeft = scrollStart - move;
+});
+
+// ---- Touch Events (Mobile) ----
+slider.addEventListener('touchstart', (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX;
+  scrollStart = slider.scrollLeft;
+});
+
+slider.addEventListener('touchend', () => {
+  isDown = false;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  if (!isDown) return;
+  const move = e.touches[0].pageX - startX;
+  slider.scrollLeft = scrollStart - move;
+});
+
+// ---- Initial cursor style ----
+slider.style.cursor = 'grab';
