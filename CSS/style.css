@@ -1041,9 +1041,9 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
-    max-width: 200%;
-    width: 200%;
-    margin: 185px 200px;
+    max-width: 100%;
+    width: 100%;
+    margin: 50px auto;
   }
 
   .main-text h2 {
@@ -2034,7 +2034,7 @@ background-position: center top 10px;
   }
   
   .education-image img {
-margin-right: 700px;
+margin-right: 650px;
 max-width: 100%;
 width: 100%;
   }
@@ -2354,4 +2354,3 @@ width: 100%;
   }
   }
   
-
