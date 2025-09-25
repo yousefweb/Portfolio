@@ -6,7 +6,7 @@ let scrollLeft;
 function startDrag(e) {
   isDown = true;
   slider.classList.add('active');
-  startX = e.pageX || e.touches[0].pageX;
+  startX = e.pageX ?? e.touches[0].pageX;
   scrollLeft = slider.scrollLeft;
 }
 
@@ -18,7 +18,7 @@ function stopDrag() {
 function moveDrag(e) {
   if (!isDown) return;
   e.preventDefault();
-  const x = e.pageX || e.touches[0].pageX;
+  const x = e.pageX ?? e.touches[0].pageX;
   const walk = (x - startX) * 1; // سرعة السحب
   slider.scrollLeft = scrollLeft - walk;
 }
