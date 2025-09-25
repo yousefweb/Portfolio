@@ -1042,8 +1042,8 @@ section {
     justify-content: space-around;
     padding: 10px;
     max-width: 200%;
-    width: 200%;
-    margin: 185px 200px;
+    width: 100%;
+    margin: 185px 0px;
   }
 
   .main-text h2 {
