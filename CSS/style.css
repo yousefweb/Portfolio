@@ -2353,4 +2353,8 @@ width: 100%;
   margin-top: 20px;
   }
   }
-  
+  @supports (-webkit-overflow-scrolling: touch) {
+  .education {
+    -webkit-overflow-scrolling: touch;
+  }
+}
