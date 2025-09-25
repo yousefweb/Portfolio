@@ -126,7 +126,7 @@ section {
   padding: 0 15px;
   line-height: 32px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 500px;
   border-radius: 10px;
   background: var(--main-color);
   color: var(--text-color);
@@ -136,13 +136,13 @@ section {
   display: inline-block;
   color: var(--second-color);
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 500px;
 
 }
 
 .home-text h1 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 600px;
   color: var(--text-color);
   line-height: 1.1;
   margin: 0 0 8px;
@@ -290,10 +290,6 @@ section {
 .education:active {
   cursor: grabbing;
 }
-.education.active {
-  cursor: grabbing;
-  user-select: none;
-}
 
 .education::-webkit-scrollbar {
   display: none;
@@ -301,7 +297,7 @@ section {
 
 .education-item {
   flex: 0 0 auto;
-  width: 100px;
+  width: 250px;
 }
 
 .main-text h2 {
@@ -773,7 +769,7 @@ section {
   display: inline-block;
   font-size: 16px;
   background: var(--main-color);
-  width: 100px;
+  width: 160px;
   transition: all 0.45s ease;
   color: white;
   border: none;
@@ -850,10 +846,11 @@ section {
     background: var(--bg-color);
     color: var(--text-color);
     transition: all 0.45s ease;
+    transform: scale(25%);
     zoom: 100%; 
     transform-origin: top left; 
     font-size: 16px; 
-    width: 100%;
+    width: 125%;
     height: 40vh;
     }
   .logo {
@@ -876,7 +873,7 @@ section {
     line-height: 2rem;
     padding: 100px 50px;
     justify-content: space-between;
-    width: 100%;
+    width: 920%;
     height: 199vh;
     background-image: url('../img/BG.png'); 
     background-size: cover;
@@ -927,7 +924,7 @@ section {
 
   .home-text h1 {
     font-size: 7rem;
-    font-weight: 600;
+    font-weight: 600px;
     color: var(--text-color);
     line-height: 1.1;
     margin: 0 0 8px;
@@ -957,7 +954,7 @@ section {
     line-height: 40px;
     font-size: 70px;
     border-radius: 10px;
-    font-weight: 500;
+    font-weight: 500px;
     background: var(--main-color);
     color: var(--text-color);
   }
@@ -966,7 +963,7 @@ section {
     display: inline-block;
     color: var(--second-color);
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 500px;
   
   }
   .btn {
@@ -988,7 +985,7 @@ section {
 @media screen and (min-width: 390px) and (max-width: 844px) {
   .about-text {
     margin-left: 100px;
-    width: 100%;
+    width: 200%;
   }
 
   .about {
@@ -999,9 +996,9 @@ section {
   .about-img img {
     align-items: center;
     margin-left: 200px;
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
-    width: 100%;
+    width: 135%;
     border-radius: 50px;
 }
   .about-text h2 {
@@ -1044,9 +1041,9 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
-    max-width: 100%;
-    width: 100%;
-    margin: 185px 0px;
+    max-width: 200%;
+    width: 200%;
+    margin: 185px 200px;
   }
 
   .main-text h2 {
@@ -1062,8 +1059,8 @@ section {
 
   .education-image img {
     margin-right: 0;
-    max-width: 100%;
-    width:100%;
+    max-width: 200%;
+    width:152%;
   }
 
   .education-details h3 {
@@ -1257,7 +1254,7 @@ section {
   .contact {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 390%;
     margin: 100px auto ;
     margin-left: 20px;
     padding: 20px;
@@ -1325,7 +1322,7 @@ section {
 /* footer media */
 @media screen and (min-width:390px)and (max-width: 844px) {
   .footer{
-    width: 100%;
+    width: 400%;
     margin-top: 150px;
   }
   .footer-logo img{
@@ -1673,7 +1670,7 @@ padding: 4rem;
   display: contents;
 margin-top: -0.5rem;
 text-align: left;
-max-width: 100px;
+max-width: 500px;
 }
 
 .contact-text h4 {
@@ -1832,7 +1829,7 @@ transform: scale(25%);
 zoom: 100%;
 transform-origin: top left; 
 font-size: 16px; 
-width: 100%;
+width: 125%;
 height: 40vh;
 }
 
@@ -1857,7 +1854,7 @@ line-height: 3rem;
 padding: 192px 50px;
 justify-content: space-between;
 width: 920%;
-height: 119vh;
+height: 199vh;
 background-image: url('../img/BG.png');
 background-size: cover;
 background-position: center top 10px;
@@ -1895,7 +1892,7 @@ background-position: center top 10px;
   }
 
   .home-text {
-    margin-bottom: 445px;
+    margin-bottom: 200px;
   }
 
   .home-text h1 {
@@ -1912,7 +1909,7 @@ background-position: center top 10px;
   }
 
   .home-text p {
-    font-size: 2.9rem;
+    font-size: 2.6rem;
     line-height: 4.5rem;
     height: 12rem;
     overflow: hidden;
@@ -1964,7 +1961,7 @@ background-position: center top 10px;
   @media screen and (min-width: 360px) and (max-width: 740px) {
   .about-text {
   margin-left: 100px;
-  width: 100%;
+  width: 200%;
   }
   
   .about {
@@ -2303,7 +2300,7 @@ width: 100%;
   /* footer media */
   @media screen and (min-width: 360px) and (max-width: 740px) {
     .footer{
-  width: 100%;
+  width: 400%;
   margin-top: 150px;
   }
   .footer-logo img{
@@ -2356,24 +2353,4 @@ width: 100%;
   margin-top: 20px;
   }
   }
-.education {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  cursor: grab;
-}
-
-.education.active {
-  cursor: grabbing;
-  user-select: none;
-}
-.education::-webkit-scrollbar {
-  display: none; /* إخفاء شريط التمرير */
-}
-.education > div {
-  min-width: 200px;
-  margin-right: 16px;
-  background: #eee;
-  padding: 20px;
-  border-radius: 8px;
-}
+  
