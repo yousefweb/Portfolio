@@ -272,7 +272,7 @@ section {
   color: var(--main-color);
 }
 
-/* Eductaion Section */
+/* Education Section */
 .education {
   display: flex;
   flex-direction: row;
@@ -297,19 +297,8 @@ section {
 
 .education-item {
   flex: 0 0 auto;
-  width: 250px;
-}
-
-.main-text h2 {
-  text-align: center;
-  font-size: var(--h2-font);
-  line-height: 1.2;
-  color: var(--text-color);
-  margin-left: 50px;
-  margin-top: 200px;
-}
-
-.education-item {
+  width: 20%;
+  margin: 10px;
   background-color: rgb(56, 26, 26);
   border: 5px solid var(--main-color);
   border-radius: 10px;
@@ -320,35 +309,23 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   animation: flashBorder 2s infinite;
   line-height: 2;
-  width: 20%;
-  margin: 10px;
+  transition: transform 0.2s;
 }
 
 @keyframes flashBorder {
-  0% {
-    border-color: var(--main-color);
-  }
-
-  50% {
-    border-color: #6f6fa3;
-  }
-
-  100% {
-    border-color: var(--main-color);
-  }
+  0% { border-color: var(--main-color); }
+  50% { border-color: #6f6fa3; }
+  100% { border-color: var(--main-color); }
 }
 
 .education-item:hover {
   background-color: #b9a8ad5e;
   transform: scale(1.02);
-  transition: transform 0.2s;
 }
 
 .education-image img {
   max-width: 100%;
   height: auto;
-  width: auto;
-  margin-right: 65px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 5px;
@@ -365,14 +342,10 @@ section {
 }
 
 .education-details h3 {
-  box-sizing: border-box;
   font-size: 20px;
   margin: 15px 0;
   color: var(--text-color);
   font-weight: 600;
-  width: auto;
-  height: auto;
-  max-width: 100%;
 }
 
 .education-details a {
@@ -386,9 +359,8 @@ section {
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
-  line-height: 1;
-  float: inline-end;
   margin-top: auto;
+  align-self: flex-end;
 }
 
 .education-details a:hover {
@@ -403,6 +375,40 @@ section {
   line-height: 1.5;
   margin: 10px 0 20px 0;
 }
+
+.main-text h2 {
+  text-align: center;
+  font-size: var(--h2-font);
+  line-height: 1.2;
+  color: var(--text-color);
+  margin-left: 50px;
+  margin-top: 200px;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 740px) {
+  .education {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .education-item {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .education-image img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-text h2 {
+    font-size: 2rem;
+    margin: 50px 0 20px 0;
+    text-align: center;
+  }
+}
+
 
 /* Experience Section*/
 .experience {
