@@ -272,7 +272,7 @@ section {
   color: var(--main-color);
 }
 
-/* Education Section */
+/* Eductaion Section */
 .education {
   display: flex;
   flex-direction: row;
@@ -283,8 +283,10 @@ section {
   padding: 20px;
   border-radius: 10px;
   width: 100%;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   cursor: grab;
+  flex-wrap: nowrap; /* منع الالتفاف الافتراضي */
 }
 
 .education:active {
@@ -297,8 +299,7 @@ section {
 
 .education-item {
   flex: 0 0 auto;
-  width: 20%;
-  margin: 10px;
+  width: 250px;
   background-color: rgb(56, 26, 26);
   border: 5px solid var(--main-color);
   border-radius: 10px;
@@ -309,7 +310,8 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   animation: flashBorder 2s infinite;
   line-height: 2;
-  transition: transform 0.2s;
+  margin: 10px;
+  box-sizing: border-box;
 }
 
 @keyframes flashBorder {
@@ -321,6 +323,7 @@ section {
 .education-item:hover {
   background-color: #b9a8ad5e;
   transform: scale(1.02);
+  transition: transform 0.2s;
 }
 
 .education-image img {
@@ -330,6 +333,7 @@ section {
   border-radius: 8px;
   padding: 5px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .education-details {
@@ -337,8 +341,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .education-details h3 {
@@ -346,6 +349,7 @@ section {
   margin: 15px 0;
   color: var(--text-color);
   font-weight: 600;
+  width: 100%;
 }
 
 .education-details a {
@@ -359,8 +363,8 @@ section {
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
+  line-height: 1;
   margin-top: auto;
-  align-self: flex-end;
 }
 
 .education-details a:hover {
@@ -376,36 +380,25 @@ section {
   margin: 10px 0 20px 0;
 }
 
-.main-text h2 {
-  text-align: center;
-  font-size: var(--h2-font);
-  line-height: 1.2;
-  color: var(--text-color);
-  margin-left: 50px;
-  margin-top: 200px;
-}
-
-/* Responsive for mobile */
+/* Responsive */
 @media screen and (max-width: 740px) {
   .education {
-    flex-direction: column;
     padding: 10px;
   }
 
   .education-item {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  .education-image img {
-    width: 100%;
-    margin: 0 auto;
+    width: 200px; /* أصغر ليتناسب مع الموبايل */
   }
 
   .main-text h2 {
-    font-size: 2rem;
-    margin: 50px 0 20px 0;
+    font-size: 3rem; /* تصغير العنوان للهاتف */
+    margin-left: 0;
     text-align: center;
+    margin-top: 50px;
+  }
+
+  .education-image img {
+    margin-right: 0;
   }
 }
 
