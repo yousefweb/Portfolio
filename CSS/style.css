@@ -1033,7 +1033,7 @@ section {
 }
 
 /* education media */
-@media screen and (min-width: 390px) and (max-width: 844px) {
+/* @media screen and (min-width: 390px) and (max-width: 844px) {
   .education {
     display: flex;
     flex-direction: row;
@@ -1076,7 +1076,7 @@ section {
   .education-details p {
     font-size: 50px;
   }
-}
+} */
 
 /* experience media */
 @media screen and (min-width: 390px) and (max-width: 844px) {
