@@ -272,7 +272,7 @@ section {
   color: var(--main-color);
 }
 
-/* Eductaion Section */
+/* Education Section */
 .education {
   display: flex;
   flex-direction: row;
@@ -286,7 +286,7 @@ section {
   box-sizing: border-box;
   scroll-behavior: smooth;
   cursor: grab;
-  flex-wrap: nowrap; /* منع الالتفاف الافتراضي */
+  flex-wrap: nowrap; /* منع الالتفاف */
 }
 
 .education:active {
@@ -387,11 +387,12 @@ section {
   }
 
   .education-item {
-    width: 200px; /* أصغر ليتناسب مع الموبايل */
+    width: 180px;
+    margin: 5px;
   }
 
   .main-text h2 {
-    font-size: 3rem; /* تصغير العنوان للهاتف */
+    font-size: 2.5rem;
     margin-left: 0;
     text-align: center;
     margin-top: 50px;
@@ -401,6 +402,7 @@ section {
     margin-right: 0;
   }
 }
+
 
 
 /* Experience Section*/
