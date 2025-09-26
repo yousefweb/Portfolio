@@ -283,14 +283,13 @@ section {
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   cursor: grab;
-  flex-wrap: nowrap; /* منع الالتفاف */
 }
 
-.education:active {
+.education.active {
   cursor: grabbing;
+  user-select: none;
 }
 
 .education::-webkit-scrollbar {
@@ -311,7 +310,6 @@ section {
   animation: flashBorder 2s infinite;
   line-height: 2;
   margin: 10px;
-  box-sizing: border-box;
 }
 
 @keyframes flashBorder {
@@ -329,11 +327,11 @@ section {
 .education-image img {
   max-width: 100%;
   height: auto;
+  margin-right: 0;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 5px;
   box-sizing: border-box;
-  margin-bottom: 10px;
 }
 
 .education-details {
@@ -349,11 +347,11 @@ section {
   margin: 15px 0;
   color: var(--text-color);
   font-weight: 600;
-  width: 100%;
+  max-width: 100%;
 }
 
 .education-details a {
-  display: block;
+  display: inline-block;
   padding: 10px 20px;
   background-color: var(--main-color);
   color: #fff;
@@ -363,12 +361,11 @@ section {
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
-  line-height: 1;
   margin-top: auto;
 }
 
 .education-details a:hover {
-  background-color: rgba(209, 199, 179, 0.699);
+  background-color: rgba(209, 199, 179, 0.7);
   color: var(--main-color);
 }
 
@@ -379,6 +376,26 @@ section {
   line-height: 1.5;
   margin: 10px 0 20px 0;
 }
+
+/* Responsive */
+@media screen and (max-width: 740px) {
+  .education {
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 0;
+  }
+  .education-item {
+    width: 80%;
+    margin: 10px 5px;
+  }
+  .main-text h2 {
+    font-size: 3rem;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
 
 /* Responsive */
 @media screen and (max-width: 740px) {
